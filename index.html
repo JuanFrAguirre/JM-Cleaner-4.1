@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <script
+      src="https://kit.fontawesome.com/878d9d86f6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!-- Cuerpo del Codigo---------------------------------------- -->
+    <!-- --------------------------------------------------------- -->
+
+    <!-- Header ---------------------------------------- -->
+
+    <header>
+      <div class="header contenedor">
+        <div class="contenedor-logo">
+          <div class="logo">
+            <!-- <img src="img/logo.svg" alt="Logo JM" /> -->
+          </div>
+        </div>
+
+        <div class="nav-btn">
+          <div class="linea linea1"></div>
+          <div class="linea linea2"></div>
+          <div class="linea linea3"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+
+    <nav>
+      <div class="contenedor contenedor-navegacion">
+        <div class="nav-links">
+          <a href="#">Inicio</a>
+          <a href="#">Productos</a>
+          <a href="#">Aplicaciones</a>
+          <a href="#">Compañía</a>
+          <a href="#">Ventas</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content---------------------------------------- -->
+
+    <main>
+      <!-- Cuerpo del main -->
+
+      <div class="main">
+        <!-- Presentacion -->
+
+        <div class="offset-main"></div>
+        <section class="contenedor-presentacion">
+          <div class="contenedor presentacion">
+            <h2>¿Cansado de tus anteojos empañados?</h2>
+            <div class="tiki-presentacion">
+              <div class="tiki">
+                <div class="t1"></div>
+                <div class="t2">
+                  <div class="globo-ocular">
+                    <div class="ojo"></div>
+                  </div>
+                </div>
+                <div class="t3"></div>
+                <div class="t4"></div>
+                <div class="t5"></div>
+                <div class="t6"></div>
+                <div class="t7"></div>
+                <div class="t8"></div>
+                <div class="t9">
+                  <div class="t9-1"></div>
+                  <div class="t9-2"></div>
+                  <div class="t9-3"></div>
+                </div>
+                <div class="t10"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimoniales -->
+
+        <section class="contenedor contenedor-testimoniales">
+          <h3>Testimoniales</h3>
+          <div class="testimoniales">
+            <!-- testimonial 1 -->
+
+            <div class="testimonial">
+              <!-- <div class="foto-testimonial">
+                <img src="#" alt="Foto del autor" />
+              </div> -->
+              <div class="texto-testimonial">
+                <h5>Jose Maria Hugo Pedrozo</h5>
+                <div class="quote">
+                  <div class="quotation-mark">
+                    <i class="fas fa-quote-left"></i>
+                  </div>
+                  <p>
+                    El producto no contiene alcohol ni otros componentes que
+                    dañen el cristal del lente, eso es algo muy importante, ya
+                    que protege y cuida la vida útil de mis anteojos
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- testimonial 2 -->
+
+            <div class="testimonial">
+              <!-- <div class="foto-testimonial">
+                <img src="#" alt="Foto del autor" />
+              </div> -->
+              <div class="texto-testimonial">
+                <h5>Jose Maria Hugo Pedrozo</h5>
+                <div class="quote">
+                  <div class="quotation-mark">
+                    <i class="fas fa-quote-left"></i>
+                  </div>
+                  <p>
+                    El producto no contiene alcohol ni otros componentes que
+                    dañen el cristal del lente, eso es algo muy importante, ya
+                    que protege y cuida la vida útil de mis anteojos
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- testimonial 3 -->
+
+            <div class="testimonial">
+              <!-- <div class="foto-testimonial">
+                <img src="#" alt="Foto del autor" />
+              </div> -->
+              <div class="texto-testimonial">
+                <h5>Jose Maria Hugo Pedrozo</h5>
+                <div class="quote">
+                  <div class="quotation-mark">
+                    <i class="fas fa-quote-left"></i>
+                  </div>
+                  <p>
+                    El producto no contiene alcohol ni otros componentes que
+                    dañen el cristal del lente, eso es algo muy importante, ya
+                    que protege y cuida la vida útil de mis anteojos
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Fin cuerpo del main  -->
+    </main>
+
+    <!-- Footer---------------------------------------- -->
+
+    <footer>
+      <div class="contenedor footer">
+        <div class="descripcion-footer">
+          ¡Podés encontrarnos en gran variedad de lugares, desde farmacias y
+          ópticas hasta en nuestras redes!
+        </div>
+        <div class="mapa" id="mapid"></div>
+        <div class="redes">
+          <a href="http://instagram.com" class="instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="http://twitter.com" class="twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="http://facebook.com" class="facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="mailto:contacto@jm-cleaner.com" class="mail">
+            <i class="far fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="trademark">
+        Todos los derechos reservados. <br />
+        JM-Cleaner &reg; <br />
+        2020
+      </div>
+    </footer>
+
+    <!-- ------------------------------------------------------------- -->
+    <!-- Fin cuerpo del Codigo---------------------------------------- -->
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
+</html>

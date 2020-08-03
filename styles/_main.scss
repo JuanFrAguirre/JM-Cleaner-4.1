@@ -1,0 +1,616 @@
+main {
+  margin-bottom: 5rem;
+
+  .offset-main {
+    height: 8rem;
+    width: 100%;
+  }
+
+  .main {
+    .contenedor-presentacion {
+      margin: 0;
+      background: linear-gradient(45deg, #999 0%, #bbb 15%, $transparent 50%, #bbb 85%, #999 100%);
+
+      .presentacion {
+        height: 90vh;
+        max-height: 100rem;
+        position: relative;
+        align-items: flex-end;
+        display: flex;
+
+        h2 {
+          text-align: center;
+          z-index: 50;
+          // width: 100%;
+          height: 40%;
+          font-size: 2.75rem;
+          padding: 2rem;
+          color: #fff;
+          background-color: rgba($secondary-color, 0.8);
+          border: 1rem solid rgba(rgb(0, 195, 255), .3);
+          line-height: 7.5rem;
+
+          @media (min-width: 400px) {
+            height: 30%;
+          }
+
+          @media (min-width: 600px) {
+            line-height: 10rem;
+          }
+
+          @media (min-width: 1024px) {
+            height: 30%;
+            font-size: 4rem;
+          }
+        }
+
+        .tiki-presentacion {
+          position: absolute;
+          left: 25%;
+          transform: translateX(-25%);
+          bottom: 0rem;
+
+          .tiki {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .t1 {
+              height: $un-medida * 2rem;
+              width: $un-medida * 5rem;
+              // background-color: $primary-color;
+              background-color: #111;
+              border-radius: 50% 50% 0 0;
+            }
+
+            .t2 {
+              height: $un-medida * 5rem;
+              width: $un-medida * 5rem;
+              // background-color: $secondary-color;
+              background-color: #111;
+              display: flex;
+              justify-content: center;
+              align-items: flex-start;
+
+              .globo-ocular {
+                width: 70%;
+                height: 70%;
+                background-color: #fff;
+                position: relative;
+                border-radius: 50%;
+                overflow: hidden;
+
+                .ojo {
+                  width: 50%;
+                  height: 50%;
+                  background-color: #111;
+                  border-radius: 50%;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                }
+              }
+            }
+
+            .t3 {
+              height: $un-medida * 1rem;
+              width: $un-medida * 4.75rem;
+              // background-color: $primary-color;
+              background-color: #111;
+            }
+
+            .t4 {
+              height: $un-medida * 1rem;
+              width: $un-medida * 5rem;
+              // background-color: $secondary-color;
+              background-color: #111;
+            }
+
+            .t5 {
+              height: $un-medida * 1rem;
+              width: $un-medida * 6rem;
+              border-radius: 0.75rem 0.75rem 0 0;
+              // background-color: $primary-color;
+              background-color: #111;
+            }
+
+            .t6 {
+              height: $un-medida * 3rem;
+              width: $un-medida * 6rem;
+              // background-color: $secondary-color;
+              background-color: #111;
+            }
+
+            .t7 {
+              height: $un-medida * 2rem;
+              width: $un-medida * 6rem;
+              border-radius: 0 0 0.6rem 0.6rem;
+              // background-color: $primary-color;
+              background-color: #111;
+            }
+
+            .t8 {
+              height: $un-medida * 0.5rem;
+              width: $un-medida * 5.2rem;
+              // background-color: $secondary-color;
+              background-color: #111;
+            }
+
+            .t9 {
+              display: flex;
+
+              .t9-1 {
+                height: $un-medida * 7rem;
+                width: $un-medida * 3rem;
+                border-radius: 55% 0 0 0;
+                // background-color: $primary-color;
+                background-color: #111;
+              }
+
+              .t9-2 {
+                height: $un-medida * 7rem;
+                width: $un-medida * 2rem;
+                // background-color: $primary-color;
+                background-color: #111;
+              }
+
+              .t9-3 {
+                height: $un-medida * 7rem;
+                width: $un-medida * 3rem;
+                border-radius: 0 55% 0 0;
+                // background-color: $primary-color;
+                background-color: #111;
+              }
+            }
+
+            .t10 {
+              height: $un-medida * 7rem;
+              width: $un-medida * 8rem;
+              // background-color: $secondary-color;
+              background-color: #111;
+            }
+
+            @media (max-height: 700px) {
+              .t1 {
+                height: $un16 * 2rem;
+                width: $un16 * 5rem;
+              }
+
+              .t2 {
+                height: $un16 * 5rem;
+                width: $un16 * 5rem;
+              }
+
+              .t3 {
+                height: $un16 * 1rem;
+                width: $un16 * 4.75rem;
+              }
+
+              .t4 {
+                height: $un16 * 1rem;
+                width: $un16 * 5rem;
+              }
+
+              .t5 {
+                height: $un16 * 1rem;
+                width: $un16 * 6rem;
+              }
+
+              .t6 {
+                height: $un16 * 3rem;
+                width: $un16 * 6rem;
+              }
+
+              .t7 {
+                height: $un16 * 2rem;
+                width: $un16 * 6rem;
+              }
+
+              .t8 {
+                height: $un16 * 0.5rem;
+                width: $un16 * 5.2rem;
+              }
+
+              .t9 {
+
+                .t9-1 {
+                  height: $un16 * 7rem;
+                  width: $un16 * 3rem;
+                }
+
+                .t9-2 {
+                  height: $un16 * 7rem;
+                  width: $un16 * 2rem;
+                }
+
+                .t9-3 {
+                  height: $un16 * 7rem;
+                  width: $un16 * 3rem;
+                }
+              }
+
+
+              .t10 {
+                height: $un16 * 7rem;
+                width: $un16 * 8rem;
+              }
+            }
+
+            @media (min-height: 701px) and (max-height: 900px) {
+              .t1 {
+                height: $un18 * 2rem;
+                width: $un18 * 5rem;
+              }
+
+              .t2 {
+                height: $un18 * 5rem;
+                width: $un18 * 5rem;
+              }
+
+              .t3 {
+                height: $un18 * 1rem;
+                width: $un18 * 4.75rem;
+              }
+
+              .t4 {
+                height: $un18 * 1rem;
+                width: $un18 * 5rem;
+              }
+
+              .t5 {
+                height: $un18 * 1rem;
+                width: $un18 * 6rem;
+              }
+
+              .t6 {
+                height: $un18 * 3rem;
+                width: $un18 * 6rem;
+              }
+
+              .t7 {
+                height: $un18 * 2rem;
+                width: $un18 * 6rem;
+              }
+
+              .t8 {
+                height: $un18 * 0.5rem;
+                width: $un18 * 5.2rem;
+              }
+
+              .t9 {
+
+                .t9-1 {
+                  height: $un18 * 7rem;
+                  width: $un18 * 3rem;
+                }
+
+                .t9-2 {
+                  height: $un18 * 7rem;
+                  width: $un18 * 2rem;
+                }
+
+                .t9-3 {
+                  height: $un18 * 7rem;
+                  width: $un18 * 3rem;
+                }
+              }
+
+
+              .t10 {
+                height: $un18 * 7rem;
+                width: $un18 * 8rem;
+              }
+            }
+
+            @media (min-height: 801px) and (max-height: 900px) {
+              .t1 {
+                height: $un20 * 2rem;
+                width: $un20 * 5rem;
+              }
+
+              .t2 {
+                height: $un20 * 5rem;
+                width: $un20 * 5rem;
+              }
+
+              .t3 {
+                height: $un20 * 1rem;
+                width: $un20 * 4.75rem;
+              }
+
+              .t4 {
+                height: $un20 * 1rem;
+                width: $un20 * 5rem;
+              }
+
+              .t5 {
+                height: $un20 * 1rem;
+                width: $un20 * 6rem;
+              }
+
+              .t6 {
+                height: $un20 * 3rem;
+                width: $un20 * 6rem;
+              }
+
+              .t7 {
+                height: $un20 * 2rem;
+                width: $un20 * 6rem;
+              }
+
+              .t8 {
+                height: $un20 * 0.5rem;
+                width: $un20 * 5.2rem;
+              }
+
+              .t9 {
+
+                .t9-1 {
+                  height: $un20 * 7rem;
+                  width: $un20 * 3rem;
+                }
+
+                .t9-2 {
+                  height: $un20 * 7rem;
+                  width: $un20 * 2rem;
+                }
+
+                .t9-3 {
+                  height: $un20 * 7rem;
+                  width: $un20 * 3rem;
+                }
+              }
+
+
+              .t10 {
+                height: $un20 * 7rem;
+                width: $un20 * 8rem;
+              }
+            }
+
+            @media (min-height: 901px) and (max-height: 1000px) {
+              .t1 {
+                height: $un22 * 2rem;
+                width: $un22 * 5rem;
+              }
+
+              .t2 {
+                height: $un22 * 5rem;
+                width: $un22 * 5rem;
+              }
+
+              .t3 {
+                height: $un22 * 1rem;
+                width: $un22 * 4.75rem;
+              }
+
+              .t4 {
+                height: $un22 * 1rem;
+                width: $un22 * 5rem;
+              }
+
+              .t5 {
+                height: $un22 * 1rem;
+                width: $un22 * 6rem;
+              }
+
+              .t6 {
+                height: $un22 * 3rem;
+                width: $un22 * 6rem;
+              }
+
+              .t7 {
+                height: $un22 * 2rem;
+                width: $un22 * 6rem;
+              }
+
+              .t8 {
+                height: $un22 * 0.5rem;
+                width: $un22 * 5.2rem;
+              }
+
+              .t9 {
+
+                .t9-1 {
+                  height: $un22 * 7rem;
+                  width: $un22 * 3rem;
+                }
+
+                .t9-2 {
+                  height: $un22 * 7rem;
+                  width: $un22 * 2rem;
+                }
+
+                .t9-3 {
+                  height: $un22 * 7rem;
+                  width: $un22 * 3rem;
+                }
+              }
+
+
+              .t10 {
+                height: $un22 * 7rem;
+                width: $un22 * 8rem;
+              }
+            }
+
+            @media (min-height: 1200px) {
+              .t1 {
+                height: $unmax * 2rem;
+                width: $unmax * 5rem;
+              }
+
+              .t2 {
+                height: $unmax * 5rem;
+                width: $unmax * 5rem;
+              }
+
+              .t3 {
+                height: $unmax * 1rem;
+                width: $unmax * 4.75rem;
+              }
+
+              .t4 {
+                height: $unmax * 1rem;
+                width: $unmax * 5rem;
+              }
+
+              .t5 {
+                height: $unmax * 1rem;
+                width: $unmax * 6rem;
+              }
+
+              .t6 {
+                height: $unmax * 3rem;
+                width: $unmax * 6rem;
+              }
+
+              .t7 {
+                height: $unmax * 2rem;
+                width: $unmax * 6rem;
+              }
+
+              .t8 {
+                height: $unmax * 0.5rem;
+                width: $unmax * 5.2rem;
+              }
+
+              .t9 {
+
+                .t9-1 {
+                  height: $unmax * 7rem;
+                  width: $unmax * 3rem;
+                }
+
+                .t9-2 {
+                  height: $unmax * 7rem;
+                  width: $unmax * 2rem;
+                }
+
+                .t9-3 {
+                  height: $unmax * 7rem;
+                  width: $unmax * 3rem;
+                }
+              }
+
+
+              .t10 {
+                height: $unmax * 7rem;
+                width: $unmax * 8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .contenedor-testimoniales {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+
+      h3 {
+        text-align: center;
+        margin-top: 0;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        font-weight: bold;
+        font-size: 3.5rem;
+        color: $primary-color;
+        width: 100vw;
+        background-color: $secondary-color;
+      }
+
+      .testimoniales {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: 600px) {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+        }
+
+        .testimonial {
+          width: 90%;
+          box-shadow: 1rem 1rem 2rem #666;
+          margin: 1rem 0;
+          border: $secondary-color 1px solid;
+          transition: transform 0.3s ease-in-out;
+
+          @media (min-width: 600px) {
+            margin: 2rem 0;
+          }
+
+          @media (min-width: 600px) {
+            flex-basis: 40%;
+          }
+
+          @media (min-width: 968px) {
+            flex-basis: 30%;
+          }
+
+          &:hover {
+            transform: scale(1.03);
+          }
+
+          .texto-testimonial {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 0 0 2rem;
+
+            h5 {
+              text-align: center;
+              align-self: center;
+              margin-top: 2rem;
+              padding-bottom: 2rem;
+              border-bottom: 1px solid $secondary-color;
+            }
+
+            .quote {
+              display: flex;
+
+
+              .quotation-mark {
+                width: 30%;
+                display: flex;
+                justify-content: center;
+
+                i {
+                  font-size: 5rem;
+                  padding-top: 2rem;
+                  color: $primary-color;
+                }
+              }
+
+              p {
+                width: 70%;
+                position: relative;
+                padding-right: 2rem;
+              }
+
+              @media (min-width: 600px) {
+                .quotation-mark {
+                  width: 20%;
+
+                  i {
+                    font-size: 3rem;
+                  }
+                }
+
+                p {
+                  width: 75%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

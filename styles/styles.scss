@@ -1,0 +1,116 @@
+@import 'variables';
+@import 'header';
+@import 'nav';
+@import 'main';
+@import 'footer';
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 2;
+  position: relative;
+  font-family: 'Montserrat',
+    sans-serif;
+}
+
+/** Globales **/
+
+.contenedor {
+  max-width: 120rem;
+  width: 95%;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 90%;
+  }
+}
+
+h1 {
+  font-size: 4.2rem;
+  font-family: 'Roboto',
+    sans-serif;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-family: 'Roboto',
+    sans-serif;
+}
+
+h3 {
+  font-size: 3rem;
+  font-family: 'Roboto',
+    sans-serif;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+/** Utilidades **/
+
+.centrar-texto {
+  text-align: center;
+}
+
+.flex-c {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-fs {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-fe {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-sa {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-se {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+//---------------------------------------------
+//---------------------------------------------
+//---------------------------------------------
+//---------------------------------------------
+//---------------------------------------------
