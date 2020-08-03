@@ -449,10 +449,10 @@ main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t2 .
   background-color: #111;
   border-radius: 50%;
   position: absolute;
+  top: 50%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: movement 6s ease-in-out inifinite;
-          animation: movement 6s ease-in-out inifinite;
 }
 
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t2 .globo-ocular .parpado-arriba,
