@@ -335,6 +335,8 @@ main .main .contenedor-presentacion .presentacion h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: -2rem 2rem 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: -2rem 2rem 1rem rgba(0, 0, 0, 0.5);
   font-size: 2.75rem;
   padding: 2rem;
   color: #fff;
@@ -424,6 +426,8 @@ main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki {
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t1 {
   height: 6rem;
   width: 15rem;
+  -webkit-box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.5);
   background-color: #111;
   border-radius: 50% 50% 0 0;
 }
@@ -431,6 +435,8 @@ main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t1 {
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t2 {
   height: 15rem;
   width: 15rem;
+  -webkit-box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.5);
   background-color: #111;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -596,18 +602,24 @@ main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t2 .
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t3 {
   height: 3rem;
   width: 14.25rem;
+  -webkit-box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.5);
   background-color: #111;
 }
 
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t4 {
   height: 3rem;
   width: 15rem;
+  -webkit-box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.5);
   background-color: #111;
 }
 
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t5 {
   height: 3rem;
   width: 18rem;
+  -webkit-box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.5);
   border-radius: 0.75rem 0.75rem 0 0;
   background-color: #111;
 }
@@ -615,12 +627,16 @@ main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t5 {
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t6 {
   height: 9rem;
   width: 18rem;
+  -webkit-box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.5);
   background-color: #111;
 }
 
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t7 {
   height: 6rem;
   width: 18rem;
+  -webkit-box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.5);
   border-radius: 0 0 0.6rem 0.6rem;
   background-color: #111;
 }
@@ -628,6 +644,8 @@ main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t7 {
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t8 {
   height: 1.5rem;
   width: 15.6rem;
+  -webkit-box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.5);
   background-color: #111;
 }
 
@@ -640,6 +658,8 @@ main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 {
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-1 {
   height: 21rem;
   width: 9rem;
+  -webkit-box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.5);
   border-radius: 55% 0 0 0;
   background-color: #111;
 }
@@ -660,6 +680,8 @@ main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t10 {
   height: 21rem;
   width: 24rem;
+  -webkit-box-shadow: -1rem 0 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: -1rem 0 1rem rgba(0, 0, 0, 0.5);
   background-color: #111;
 }
 
@@ -1209,6 +1231,8 @@ footer .footer .mapa {
   height: 30rem;
   width: 100%;
   margin: 2rem 0;
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 1024px) {
