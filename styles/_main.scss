@@ -332,6 +332,24 @@ main {
               background-color: #111;
             }
 
+            .t1,
+            .t2,
+            .t3,
+            .t4,
+            .t5,
+            .t6,
+            .t7,
+            .t8,
+            .t10 {
+              background: linear-gradient(to right, #000 0%, #1f1f1f 50%, #000 100%);
+            }
+
+            .t9-2 {
+              background: linear-gradient(to right, #0f0f0f 0%, #1f1f1f 50%, #0f0f0f 100%);
+            }
+
+            // fin del tiki base ---------------------------------------------------------
+
             @media (max-height: 500px) {
               .t1 {
                 height: $un8 * 2rem;

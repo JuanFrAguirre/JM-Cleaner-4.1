@@ -685,6 +685,24 @@ main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t10 
   background-color: #111;
 }
 
+main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t1,
+main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t2,
+main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t3,
+main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t4,
+main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t5,
+main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t6,
+main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t7,
+main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t8,
+main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t10 {
+  background: -webkit-gradient(linear, left top, right top, from(#000), color-stop(50%, #1f1f1f), to(#000));
+  background: linear-gradient(to right, #000 0%, #1f1f1f 50%, #000 100%);
+}
+
+main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9-2 {
+  background: -webkit-gradient(linear, left top, right top, from(#0f0f0f), color-stop(50%, #1f1f1f), to(#0f0f0f));
+  background: linear-gradient(to right, #0f0f0f 0%, #1f1f1f 50%, #0f0f0f 100%);
+}
+
 @media (max-height: 500px) {
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t1 {
     height: 2rem;
