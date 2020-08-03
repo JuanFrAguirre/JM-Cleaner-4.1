@@ -654,7 +654,58 @@ main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t10 
   background-color: #111;
 }
 
-@media (max-height: 700px) {
+@media (max-height: 500px) {
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t1 {
+    height: 2rem;
+    width: 5rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t2 {
+    height: 5rem;
+    width: 5rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t3 {
+    height: 1rem;
+    width: 4.75rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t4 {
+    height: 1rem;
+    width: 5rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t5 {
+    height: 1rem;
+    width: 6rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t6 {
+    height: 3rem;
+    width: 6rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t7 {
+    height: 2rem;
+    width: 6rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t8 {
+    height: 0.5rem;
+    width: 5.2rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-1 {
+    height: 7rem;
+    width: 3rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-2 {
+    height: 7rem;
+    width: 2rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-3 {
+    height: 7rem;
+    width: 3rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t10 {
+    height: 7rem;
+    width: 8rem;
+  }
+}
+
+@media (min-height: 500px) and (max-height: 700px) {
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t1 {
     height: 3.6rem;
     width: 9rem;
