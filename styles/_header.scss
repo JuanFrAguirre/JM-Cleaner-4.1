@@ -4,16 +4,16 @@
 
 header {
   opacity: 1;
-  // background-color: rgb(93, 160, 236);
+  // background-color: rgba(93, 160, 236, .75);
   background: linear-gradient($secondary-color 0%, $primary-color 50%);
   background-size: cover;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 200;
-  // border-bottom: 2px solid $secondary-color;
+  border-bottom: 2px solid $secondary-color;
   // background-image: url(../img/calm-water.png);
-  filter: grayscale(.3);
+  // filter: grayscale(.3);
 
   &::after {
     content: "";
@@ -24,6 +24,8 @@ header {
     top: 0;
     // background: linear-gradient(#111 0%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 100%);
     // background: linear-gradient(rgba($primary-color, .5) 0%, rgba(0, 0, 0, 0) 50%);
+    // background-color: rgba(93, 160, 236, .55);
+
 
   }
 

@@ -7,8 +7,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 200;
-  -webkit-filter: grayscale(0.3);
-          filter: grayscale(0.3);
+  border-bottom: 2px solid #014569;
 }
 
 header::after {
@@ -327,27 +326,37 @@ main .main .contenedor-presentacion .presentacion {
   display: flex;
 }
 
+@media (min-width: 1200px) {
+  main .main .contenedor-presentacion .presentacion {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+}
+
 main .main .contenedor-presentacion .presentacion h2 {
   text-align: center;
   z-index: 50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 40%;
   font-size: 2.75rem;
   padding: 2rem;
   color: #fff;
   background-color: rgba(1, 69, 105, 0.8);
   border: 1rem solid rgba(0, 195, 255, 0.3);
-  line-height: 7.5rem;
 }
 
 @media (min-width: 400px) {
   main .main .contenedor-presentacion .presentacion h2 {
     height: 30%;
-  }
-}
-
-@media (min-width: 600px) {
-  main .main .contenedor-presentacion .presentacion h2 {
-    line-height: 10rem;
   }
 }
 
@@ -358,12 +367,27 @@ main .main .contenedor-presentacion .presentacion h2 {
   }
 }
 
+@media (min-width: 1200px) {
+  main .main .contenedor-presentacion .presentacion h2 {
+    width: 60%;
+    height: 60%;
+    font-weight: 300;
+    font-size: 5rem;
+  }
+}
+
 main .main .contenedor-presentacion .presentacion .tiki-presentacion {
   position: absolute;
   left: 25%;
   -webkit-transform: translateX(-25%);
           transform: translateX(-25%);
   bottom: 0rem;
+}
+
+@media (min-width: 1200px) {
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion {
+    left: 10%;
+  }
 }
 
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki {
@@ -383,15 +407,15 @@ main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki {
 }
 
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t1 {
-  height: 5rem;
-  width: 12.5rem;
+  height: 6rem;
+  width: 15rem;
   background-color: #111;
   border-radius: 50% 50% 0 0;
 }
 
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t2 {
-  height: 12.5rem;
-  width: 12.5rem;
+  height: 15rem;
+  width: 15rem;
   background-color: #111;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -419,47 +443,176 @@ main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t2 .
   background-color: #111;
   border-radius: 50%;
   position: absolute;
-  top: 50%;
-  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-animation: movement 6s ease-in-out inifinite;
+          animation: movement 6s ease-in-out inifinite;
+}
+
+main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t2 .globo-ocular .parpado-arriba,
+main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t2 .globo-ocular .parpado-abajo {
+  width: 100%;
+  height: 50%;
+  background-color: #000;
+  position: absolute;
+  -webkit-animation: blink 10s ease-in-out infinite;
+          animation: blink 10s ease-in-out infinite;
+  z-index: 2;
+}
+
+main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t2 .globo-ocular .parpado-arriba {
+  top: 0;
+}
+
+main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t2 .globo-ocular .parpado-abajo {
+  bottom: 0;
+}
+
+@-webkit-keyframes movement {
+  0%,
+  10% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  20% {
+    -webkit-transform: translateX(-80%);
+            transform: translateX(-80%);
+  }
+  30%,
+  80% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  90% {
+    -webkit-transform: translateX(80%);
+            transform: translateX(80%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes movement {
+  0%,
+  10% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  20% {
+    -webkit-transform: translateX(-80%);
+            transform: translateX(-80%);
+  }
+  30%,
+  80% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  90% {
+    -webkit-transform: translateX(80%);
+            transform: translateX(80%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes blink {
+  0%,
+  22.5% {
+    height: 2.5%;
+  }
+  25% {
+    height: 50%;
+  }
+  27.5%,
+  70% {
+    height: 2.5%;
+  }
+  72% {
+    height: 70%;
+  }
+  74% {
+    height: 2.5%;
+  }
+  76% {
+    height: 70%;
+  }
+  78% {
+    height: 2.5%;
+  }
+  80%,
+  100% {
+    height: 2.5%;
+  }
+}
+
+@keyframes blink {
+  0%,
+  22.5% {
+    height: 2.5%;
+  }
+  25% {
+    height: 50%;
+  }
+  27.5%,
+  70% {
+    height: 2.5%;
+  }
+  72% {
+    height: 70%;
+  }
+  74% {
+    height: 2.5%;
+  }
+  76% {
+    height: 70%;
+  }
+  78% {
+    height: 2.5%;
+  }
+  80%,
+  100% {
+    height: 2.5%;
+  }
 }
 
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t3 {
-  height: 2.5rem;
-  width: 11.875rem;
+  height: 3rem;
+  width: 14.25rem;
   background-color: #111;
 }
 
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t4 {
-  height: 2.5rem;
-  width: 12.5rem;
+  height: 3rem;
+  width: 15rem;
   background-color: #111;
 }
 
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t5 {
-  height: 2.5rem;
-  width: 15rem;
+  height: 3rem;
+  width: 18rem;
   border-radius: 0.75rem 0.75rem 0 0;
   background-color: #111;
 }
 
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t6 {
-  height: 7.5rem;
-  width: 15rem;
+  height: 9rem;
+  width: 18rem;
   background-color: #111;
 }
 
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t7 {
-  height: 5rem;
-  width: 15rem;
+  height: 6rem;
+  width: 18rem;
   border-radius: 0 0 0.6rem 0.6rem;
   background-color: #111;
 }
 
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t8 {
-  height: 1.25rem;
-  width: 13rem;
+  height: 1.5rem;
+  width: 15.6rem;
   background-color: #111;
 }
 
@@ -470,83 +623,32 @@ main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 {
 }
 
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-1 {
-  height: 17.5rem;
-  width: 7.5rem;
+  height: 21rem;
+  width: 9rem;
   border-radius: 55% 0 0 0;
   background-color: #111;
 }
 
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-2 {
-  height: 17.5rem;
-  width: 5rem;
+  height: 21rem;
+  width: 6rem;
   background-color: #111;
 }
 
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-3 {
-  height: 17.5rem;
-  width: 7.5rem;
+  height: 21rem;
+  width: 9rem;
   border-radius: 0 55% 0 0;
   background-color: #111;
 }
 
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t10 {
-  height: 17.5rem;
-  width: 20rem;
+  height: 21rem;
+  width: 24rem;
   background-color: #111;
 }
 
 @media (max-height: 700px) {
-  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t1 {
-    height: 3.2rem;
-    width: 8rem;
-  }
-  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t2 {
-    height: 8rem;
-    width: 8rem;
-  }
-  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t3 {
-    height: 1.6rem;
-    width: 7.6rem;
-  }
-  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t4 {
-    height: 1.6rem;
-    width: 8rem;
-  }
-  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t5 {
-    height: 1.6rem;
-    width: 9.6rem;
-  }
-  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t6 {
-    height: 4.8rem;
-    width: 9.6rem;
-  }
-  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t7 {
-    height: 3.2rem;
-    width: 9.6rem;
-  }
-  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t8 {
-    height: 0.8rem;
-    width: 8.32rem;
-  }
-  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-1 {
-    height: 11.2rem;
-    width: 4.8rem;
-  }
-  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-2 {
-    height: 11.2rem;
-    width: 3.2rem;
-  }
-  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-3 {
-    height: 11.2rem;
-    width: 4.8rem;
-  }
-  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t10 {
-    height: 11.2rem;
-    width: 12.8rem;
-  }
-}
-
-@media (min-height: 701px) and (max-height: 900px) {
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t1 {
     height: 3.6rem;
     width: 9rem;
@@ -597,156 +699,207 @@ main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t10 
   }
 }
 
-@media (min-height: 801px) and (max-height: 900px) {
+@media (min-height: 701px) and (max-height: 900px) {
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t1 {
-    height: 4rem;
-    width: 10rem;
+    height: 4.2rem;
+    width: 10.5rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t2 {
-    height: 10rem;
-    width: 10rem;
+    height: 10.5rem;
+    width: 10.5rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t3 {
-    height: 2rem;
-    width: 9.5rem;
+    height: 2.1rem;
+    width: 9.975rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t4 {
-    height: 2rem;
-    width: 10rem;
+    height: 2.1rem;
+    width: 10.5rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t5 {
-    height: 2rem;
-    width: 12rem;
+    height: 2.1rem;
+    width: 12.6rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t6 {
-    height: 6rem;
-    width: 12rem;
+    height: 6.3rem;
+    width: 12.6rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t7 {
-    height: 4rem;
-    width: 12rem;
+    height: 4.2rem;
+    width: 12.6rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t8 {
-    height: 1rem;
-    width: 10.4rem;
+    height: 1.05rem;
+    width: 10.92rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-1 {
-    height: 14rem;
-    width: 6rem;
+    height: 14.7rem;
+    width: 6.3rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-2 {
-    height: 14rem;
-    width: 4rem;
+    height: 14.7rem;
+    width: 4.2rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-3 {
-    height: 14rem;
-    width: 6rem;
+    height: 14.7rem;
+    width: 6.3rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t10 {
-    height: 14rem;
-    width: 16rem;
+    height: 14.7rem;
+    width: 16.8rem;
+  }
+}
+
+@media (min-height: 801px) and (max-height: 900px) {
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t1 {
+    height: 4.8rem;
+    width: 12rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t2 {
+    height: 12rem;
+    width: 12rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t3 {
+    height: 2.4rem;
+    width: 11.4rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t4 {
+    height: 2.4rem;
+    width: 12rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t5 {
+    height: 2.4rem;
+    width: 14.4rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t6 {
+    height: 7.2rem;
+    width: 14.4rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t7 {
+    height: 4.8rem;
+    width: 14.4rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t8 {
+    height: 1.2rem;
+    width: 12.48rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-1 {
+    height: 16.8rem;
+    width: 7.2rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-2 {
+    height: 16.8rem;
+    width: 4.8rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-3 {
+    height: 16.8rem;
+    width: 7.2rem;
+  }
+  main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t10 {
+    height: 16.8rem;
+    width: 19.2rem;
   }
 }
 
 @media (min-height: 901px) and (max-height: 1000px) {
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t1 {
-    height: 4.4rem;
-    width: 11rem;
+    height: 5.2rem;
+    width: 13rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t2 {
-    height: 11rem;
-    width: 11rem;
+    height: 13rem;
+    width: 13rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t3 {
-    height: 2.2rem;
-    width: 10.45rem;
+    height: 2.6rem;
+    width: 12.35rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t4 {
-    height: 2.2rem;
-    width: 11rem;
+    height: 2.6rem;
+    width: 13rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t5 {
-    height: 2.2rem;
-    width: 13.2rem;
+    height: 2.6rem;
+    width: 15.6rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t6 {
-    height: 6.6rem;
-    width: 13.2rem;
+    height: 7.8rem;
+    width: 15.6rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t7 {
-    height: 4.4rem;
-    width: 13.2rem;
+    height: 5.2rem;
+    width: 15.6rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t8 {
-    height: 1.1rem;
-    width: 11.44rem;
+    height: 1.3rem;
+    width: 13.52rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-1 {
-    height: 15.4rem;
-    width: 6.6rem;
+    height: 18.2rem;
+    width: 7.8rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-2 {
-    height: 15.4rem;
-    width: 4.4rem;
+    height: 18.2rem;
+    width: 5.2rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-3 {
-    height: 15.4rem;
-    width: 6.6rem;
+    height: 18.2rem;
+    width: 7.8rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t10 {
-    height: 15.4rem;
-    width: 17.6rem;
+    height: 18.2rem;
+    width: 20.8rem;
   }
 }
 
 @media (min-height: 1200px) {
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t1 {
-    height: 5.6rem;
-    width: 14rem;
+    height: 6.6rem;
+    width: 16.5rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t2 {
-    height: 14rem;
-    width: 14rem;
+    height: 16.5rem;
+    width: 16.5rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t3 {
-    height: 2.8rem;
-    width: 13.3rem;
+    height: 3.3rem;
+    width: 15.675rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t4 {
-    height: 2.8rem;
-    width: 14rem;
+    height: 3.3rem;
+    width: 16.5rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t5 {
-    height: 2.8rem;
-    width: 16.8rem;
+    height: 3.3rem;
+    width: 19.8rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t6 {
-    height: 8.4rem;
-    width: 16.8rem;
+    height: 9.9rem;
+    width: 19.8rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t7 {
-    height: 5.6rem;
-    width: 16.8rem;
+    height: 6.6rem;
+    width: 19.8rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t8 {
-    height: 1.4rem;
-    width: 14.56rem;
+    height: 1.65rem;
+    width: 17.16rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-1 {
-    height: 19.6rem;
-    width: 8.4rem;
+    height: 23.1rem;
+    width: 9.9rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-2 {
-    height: 19.6rem;
-    width: 5.6rem;
+    height: 23.1rem;
+    width: 6.6rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .t9-3 {
-    height: 19.6rem;
-    width: 8.4rem;
+    height: 23.1rem;
+    width: 9.9rem;
   }
   main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t10 {
-    height: 19.6rem;
-    width: 22.4rem;
+    height: 23.1rem;
+    width: 26.4rem;
   }
 }
 
@@ -771,7 +924,7 @@ main .main .contenedor-testimoniales h3 {
   font-weight: bold;
   font-size: 3.5rem;
   color: #23B8EC;
-  width: 100vw;
+  width: 100%;
   background-color: #014569;
 }
 
@@ -1073,7 +1226,7 @@ footer .trademark {
   color: #000;
   background-color: #23B8EC;
   line-height: 1.2;
-  width: 100vw;
+  width: 100%;
   padding: 1rem;
 }
 
