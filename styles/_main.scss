@@ -100,7 +100,7 @@ main {
               .globo-ocular {
                 width: 70%;
                 height: 70%;
-                background-color: #fff;
+                background: linear-gradient(to left, #fff 0%, #bbb 50%, #fff 100%);
                 position: relative;
                 border-radius: 50%;
                 overflow: hidden;
@@ -325,11 +325,30 @@ main {
             }
 
             .t10 {
-              height: $un-medida * 7rem;
-              width: $un-medida * 8rem;
-              box-shadow: -1rem 0 1rem rgba(0, 0, 0, .5);
-              // background-color: $secondary-color;
-              background-color: #111;
+              display: flex;
+
+              .t10-1 {
+                height: $un-medida * 6rem;
+                width: $un-medida * 3rem;
+                box-shadow: -1rem 0 1rem rgba(0, 0, 0, .5);
+                // background-color: $primary-color;
+                background-color: #111;
+              }
+
+              .t10-2 {
+                height: $un-medida * 6rem;
+                width: $un-medida * 2rem;
+                // background-color: $primary-color;
+                background-color: #111;
+              }
+
+              .t10-3 {
+                height: $un-medida * 6rem;
+                width: $un-medida * 3rem;
+                // box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, .5);
+                // background-color: $primary-color;
+                background-color: #111;
+              }
             }
 
             .t1,
@@ -339,12 +358,12 @@ main {
             .t5,
             .t6,
             .t7,
-            .t8,
-            .t10 {
+            .t8 {
               background: linear-gradient(to right, #000 0%, #1f1f1f 50%, #000 100%);
             }
 
-            .t9-2 {
+            .t9-2,
+            .t10-2 {
               background: linear-gradient(to right, #0f0f0f 0%, #1f1f1f 50%, #0f0f0f 100%);
             }
 

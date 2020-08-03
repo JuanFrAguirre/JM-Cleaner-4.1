@@ -5,11 +5,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: $secondary-color;
+  background: rgba($secondary-color, 1);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $primary-color;
+  background: rgba($primary-color, .5);
 }
 
 nav {

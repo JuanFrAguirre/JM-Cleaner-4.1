@@ -132,7 +132,7 @@ header .header .cruzar .linea3 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #23B8EC;
+  background: rgba(35, 184, 236, 0.5);
 }
 
 nav {
@@ -452,7 +452,8 @@ main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t2 {
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t2 .globo-ocular {
   width: 70%;
   height: 70%;
-  background-color: #fff;
+  background: -webkit-gradient(linear, right top, left top, from(#fff), color-stop(50%, #bbb), to(#fff));
+  background: linear-gradient(to left, #fff 0%, #bbb 50%, #fff 100%);
   position: relative;
   border-radius: 50%;
   overflow: hidden;
@@ -678,10 +679,28 @@ main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9 .
 }
 
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t10 {
-  height: 21rem;
-  width: 24rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t10 .t10-1 {
+  height: 18rem;
+  width: 9rem;
   -webkit-box-shadow: -1rem 0 1rem rgba(0, 0, 0, 0.5);
           box-shadow: -1rem 0 1rem rgba(0, 0, 0, 0.5);
+  background-color: #111;
+}
+
+main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t10 .t10-2 {
+  height: 18rem;
+  width: 6rem;
+  background-color: #111;
+}
+
+main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t10 .t10-3 {
+  height: 18rem;
+  width: 9rem;
   background-color: #111;
 }
 
@@ -692,13 +711,13 @@ main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t4,
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t5,
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t6,
 main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t7,
-main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t8,
-main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t10 {
+main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t8 {
   background: -webkit-gradient(linear, left top, right top, from(#000), color-stop(50%, #1f1f1f), to(#000));
   background: linear-gradient(to right, #000 0%, #1f1f1f 50%, #000 100%);
 }
 
-main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9-2 {
+main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t9-2,
+main .main .contenedor-presentacion .presentacion .tiki-presentacion .tiki .t10-2 {
   background: -webkit-gradient(linear, left top, right top, from(#0f0f0f), color-stop(50%, #1f1f1f), to(#0f0f0f));
   background: linear-gradient(to right, #0f0f0f 0%, #1f1f1f 50%, #0f0f0f 100%);
 }
